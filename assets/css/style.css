@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600&display=swap");
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+body {
+  font-family: "Fira Sans", sans-serif;
+}
+.flex-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav {
+  padding: 20px 150px 10px;
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.nav-brand {
+  display: flex;
+  align-items: center;
+}
+
+.nav-brand h2 {
+  font-size: 20px;
+}
+
+.toggle{
+    display: none;
+}
+.toggle > div{
+    width: 40px;
+    min-height: 0px;
+    border: 2px solid;
+    margin-top: 10px;
+}
+
+.nav-list {
+  height: 5px;
+}
+
+.nav-list ul li {
+  padding: 0 40px;
+}
+
+.nav-list i {
+  padding: 0 15px;
+}
+.nav-list a {
+  width: 104px;
+}
+.btn {
+  text-transform: uppercase;
+  border-radius: 20px;
+  padding: 6px 20px;
+  background-color: #ec0000;
+  color: #ffff;
+}
+
+.banner-content {
+  max-width: 900px;
+  height: 251px;
+  padding-left: 200px;
+  margin-left: 50px;
+}
+.banner-content h1 {
+  font-size: 72px;
+  font-weight: 700;
+}
+.banner-content p {
+  font-size: 36px;
+  font-weight: 500;
+  padding-block-start: 25px;
+}
+.btn-lg {
+  text-transform: uppercase;
+  border-radius: 20px;
+  padding: 10px 25px;
+  background-color: #ec0000;
+  color: #ffff;
+  display: inline-block;
+  margin-block-start: 55px;
+}
+.banner-img {
+  position: relative;
+}
+
+.banner-img img {
+  width: 700px;
+}
+main {
+  /* padding: 20px 250px 20px; */
+}
+.main-container {
+  max-width: 1440px;
+  margin: 40px auto;
+}
+main h2 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 36px;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+  flex-wrap: wrap;
+}
+.row > .menu {
+  margin-inline-start: 50px;
+}
+.menu {
+  border-top-left-radius: 140px;
+  border-top-right-radius: 140px;
+  background-color: #ffff;
+  box-shadow: 0px 0px 5px #888888;
+  width: 290px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+}
+.menu img {
+  width: 209px;
+  border-radius: 100px;
+}
+.about-menu {
+  text-align: center;
+}
+
+.about-menu h2,
+.price {
+  font-size: 24px;
+  font-weight: 600;
+}
+.text {
+  margin-block-start: 20px;
+}
+.text p {
+  font-size: 14px;
+  font-weight: 300;
+  width: 243px;
+  padding-block-start: 10px;
+}
+.about-menu .price {
+  font-size: 24px;
+  font-weight: 600;
+  color: #05a84b;
+  margin-block-start: 20px;
+}
+.others {
+  width: 243px;
+  margin-block-start: 30px;
+}
+
+.others > * {
+  border: 1px solid;
+  padding: 10px 15px;
+  border-radius: 20px;
+}
+
+.others p {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.others a {
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px 70px;
+  margin-block-start: 10px;
+  display: inline-block;
+  background: #ec0000;
+  color: white;
+}
+
+@media (min-width: 300px) and (max-width: 1400px) {
+  body {
+    /* background-color: yellow; */
+  }
+  .flex-item {
+    flex-direction: column;
+  }
+
+  nav {
+    padding: 0;
+  }
+  .container {
+    position: relative;
+    margin: 0;
+  }
+  .nav-brand {
+    width: 100%;
+    margin: 0;
+    justify-content: flex-start;
+  }
+  .toggle{
+    display: block;
+    position: absolute;
+    right: 30px;
+    top: 2px;
+  }
+
+  .toggle:hover {
+    color: blue;
+  }
+  .nav-list {
+    display: none;
+  }
+
+  header {
+    background-image: url('../images/banner-image.png');
+    /* background: linear-gradient(to bottom,red, white); */
+    background-size: cover;
+    height: 90vh;    
+  }
+  .banner-content {
+    padding: 0;
+    margin: 50px 0;
+    width: 100vw;
+    height: 80vh;  
+    text-align: center;  
+  }
+  .banner-content h1{
+    font-size: 5rem;
+    padding-top: 30px;
+  }
+  .btn-lg{
+    padding: 15px 60px;
+    margin-top: 130px;
+  }
+
+  .banner-img img {
+    display: none;
+  }
+
+  .header-container {
+    display: flex;
+  }
+  .main-container {
+    max-width: 100%;
+    margin: 50px 0;
+  }
+  .row{
+    justify-content: center;
+  }
+  .row > .menu {
+    margin: 20px 10px;
+  }
+}
+
+/* @media (min-width:1000px) and (max-width:1400px) {
+    body{
+        background-color: yellow;
+    }
+} */
